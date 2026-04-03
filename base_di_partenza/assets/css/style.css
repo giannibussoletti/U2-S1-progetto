@@ -80,6 +80,10 @@ button {
   border-radius: 50px;
 }
 
+hr {
+  border: 1px solid #191919;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -183,6 +187,7 @@ ul {
 .author img {
   width: 25px;
   height: 25px;
+  border-radius: 20px;
 }
 
 /* FOOTER & NEWS MAIN CONTAINER */
