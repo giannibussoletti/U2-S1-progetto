@@ -7286,3 +7286,9 @@ const svgInject = () => {
           </svg>`
 }
 svgInject()
+
+const arrayOfM = document.querySelectorAll("path")
+
+setInterval(changingOpacity (){
+  const randomNumber = Math.random() 
+},1000)
