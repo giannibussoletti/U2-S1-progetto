@@ -1,3 +1,20 @@
+const headerColor = document.querySelector("header")
+const buttonColor = document.getElementById("top-button")
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 410) {
+    headerColor.classList.add("nav-white-background")
+    headerColor.classList.remove("nav-yellow-background")
+    buttonColor.classList.add("nav-button-green")
+    buttonColor.classList.remove("nav-button-black")
+  } else {
+    buttonColor.classList.remove("nav-button-green")
+    buttonColor.classList.add("nav-button-black")
+    headerColor.classList.remove("nav-white-background")
+    headerColor.classList.add("nav-yellow-background")
+  }
+})
+
 const svgInject = () => {
   const heroSpan = document.getElementById("svg-inject")
 
