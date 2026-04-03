@@ -7296,4 +7296,6 @@ setInterval(function () {
   } else {
     arrayOfM[randomNumber].setAttribute("opacity", 1)
   }
-}, 400)
+
+  arrayOfM[randomNumber].style.transition = "opacity 0.5s ease-in-out"
+}, 50)
