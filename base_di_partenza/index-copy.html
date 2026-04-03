@@ -9,22 +9,21 @@
     <title>Medium-Mockup</title>
   </head>
   <body>
-    <div class="header-n-hero-bg-color">
+    <header>
+      <nav id="main-menu">
+        <img src="./assets/imgs/svg/logo.svg" alt="" />
+        <ul>
+          <li>Our Story</li>
+          <li>Membership</li>
+          <li>Write</li>
+          <li>Sign In</li>
+          <li><button>Get Started</button></li>
+        </ul>
+      </nav>
       <hr />
-      <header>
-        <nav id="main-menu">
-          <img src="./assets/imgs/svg/logo.svg" alt="" />
-          <ul>
-            <li>Our Story</li>
-            <li>Membership</li>
-            <li>Write</li>
-            <li>Sign In</li>
-            <li><button>Get Started</button></li>
-          </ul>
-        </nav>
-      </header>
-      <hr />
-      <section id="hero-section">
+    </header>
+    <section id="hero-section">
+      <div class="hero-limit">
         <span id="svg-inject"></span>
         <h1>Stay curious.</h1>
         <p>
@@ -32,95 +31,91 @@
           from writers on any topic.
         </p>
         <button>Star reading</button>
-      </section>
-      <hr />
-    </div>
+      </div>
+    </section>
+    <hr />
     <main>
       <section class="trending-section">
         <h2><img src="./assets/imgs/svg/trending.svg" alt="" />Trending on medium</h2>
         <div class="article-wrapper">
-          <div>
-            <article class="trending-article">
-              <div class="number-article">01</div>
-              <div class="inside-article-section">
-                <div class="author">
-                  <img src="./assets/imgs/image01.jpeg" alt="" />
-                  <h5>Tom cooper</h5>
-                </div>
-                <h4>Ukraine War, 23 Octorber 2022</h4>
-                <p class="date-readtime">
-                  <span>Oct 23</span> <span>&#x2022;</span> <span>5 min read</span>
-                </p>
+          <article class="trending-article">
+            <div class="number-article">01</div>
+            <div class="inside-article-section">
+              <div class="author">
+                <img src="./assets/imgs/image01.jpeg" alt="" />
+                <h5>Tom cooper</h5>
               </div>
-            </article>
-            <article class="trending-article">
-              <div class="number-article">02</div>
-              <div class="inside-article-section">
-                <div class="author">
-                  <img src="./assets/imgs/image02.png" alt="" />
-                  <h5>Arthur Hayes <span class="in-class">in</span> Entrepreneur's Handboo</h5>
-                </div>
-                <h4>Comeback</h4>
-                <p class="date-readtime">
-                  <span>Oct 26</span> <span>&#x2022;</span> <span>24 min read</span>
-                </p>
+              <h4>Ukraine War, 23 Octorber 2022</h4>
+              <p class="date-readtime">
+                <span>Oct 23</span> <span>&#x2022;</span> <span>5 min read</span>
+              </p>
+            </div>
+          </article>
+          <article class="trending-article">
+            <div class="number-article">02</div>
+            <div class="inside-article-section">
+              <div class="author">
+                <img src="./assets/imgs/image02.png" alt="" />
+                <h5>Arthur Hayes <span class="in-class">in</span> Entrepreneur's Handbook</h5>
               </div>
-            </article>
-            <article class="trending-article">
-              <div class="number-article">03</div>
-              <div class="inside-article-section">
-                <div class="author">
-                  <img src="./assets/imgs/image03.jpeg" alt="" />
-                  <h5>Erin A Ross <span class="in-class">in</span> Slackjaw</h5>
-                </div>
-                <h4>How I Learned to Love My Breasts Even Though One Is A Horcrux For Voldemort</h4>
-                <p class="date-readtime">
-                  <span>Oct 26</span> <span>&#x2022;</span> <span>2 min read</span>
-                </p>
+              <h4>Comeback</h4>
+              <p class="date-readtime">
+                <span>Oct 26</span> <span>&#x2022;</span> <span>24 min read</span>
+              </p>
+            </div>
+          </article>
+          <article class="trending-article">
+            <div class="number-article">03</div>
+            <div class="inside-article-section">
+              <div class="author">
+                <img src="./assets/imgs/image03.jpeg" alt="" />
+                <h5>Erin A Ross <span class="in-class">in</span> Slackjaw</h5>
               </div>
-            </article>
-          </div>
-          <div>
-            <article class="trending-article">
-              <div class="number-article">04</div>
-              <div class="inside-article-section">
-                <div class="author">
-                  <img src="./assets/imgs/image04.png" alt="" />
-                  <h5>Frank Mastropolo <span class="in-class">in</span> The Riff</h5>
-                </div>
-                <h4>The Night Paul McCartney Donned a Disguise at Fillmore East</h4>
-                <p class="date-readtime">
-                  <span>Oct 22</span> <span>&#x2022;</span> <span>3 min read</span>
-                </p>
+              <h4>How I Learned to Love My Breasts Even Though One Is A Horcrux For Voldemort</h4>
+              <p class="date-readtime">
+                <span>Oct 26</span> <span>&#x2022;</span> <span>2 min read</span>
+              </p>
+            </div>
+          </article>
+          <article class="trending-article">
+            <div class="number-article">04</div>
+            <div class="inside-article-section">
+              <div class="author">
+                <img src="./assets/imgs/image04.png" alt="" />
+                <h5>Frank Mastropolo <span class="in-class">in</span> The Riff</h5>
               </div>
-            </article>
-            <article class="trending-article">
-              <div class="number-article">05</div>
-              <div class="inside-article-section">
-                <div class="author">
-                  <img src="./assets/imgs/image05.jpeg" alt="" />
-                  <h5>Frank Andrade <span class="in-class">in</span> Towards Data Science</h5>
-                </div>
-                <h4>5 Python Projects to Automate Your Life: From Beginner to Advanced</h4>
-                <p class="date-readtime">
-                  <span>Oct 13</span> <span>&#x2022;</span> <span>6 min read</span>
-                </p>
+              <h4>The Night Paul McCartney Donned a Disguise at Fillmore East</h4>
+              <p class="date-readtime">
+                <span>Oct 22</span> <span>&#x2022;</span> <span>3 min read</span>
+              </p>
+            </div>
+          </article>
+          <article class="trending-article">
+            <div class="number-article">05</div>
+            <div class="inside-article-section">
+              <div class="author">
+                <img src="./assets/imgs/image05.jpeg" alt="" />
+                <h5>Frank Andrade <span class="in-class">in</span> Towards Data Science</h5>
               </div>
-            </article>
-            <article class="trending-article">
-              <div class="number-article">06</div>
-              <div class="inside-article-section">
-                <div class="author">
-                  <img src="./assets/imgs/image06.png" alt="" />
-                  <h5>Wesley Smits <span class="in-class">in</span> JavaScript in Plain English</h5>
-                </div>
-                <h4>How To Make Visual Studio Code Look Amazing</h4>
-                <p class="date-readtime">
-                  <span>Oct 20</span> <span>&#x2022;</span> <span>7 min read</span>
-                </p>
+              <h4>5 Python Projects to Automate Your Life: From Beginner to Advanced</h4>
+              <p class="date-readtime">
+                <span>Oct 13</span> <span>&#x2022;</span> <span>6 min read</span>
+              </p>
+            </div>
+          </article>
+          <article class="trending-article">
+            <div class="number-article">06</div>
+            <div class="inside-article-section">
+              <div class="author">
+                <img src="./assets/imgs/image06.png" alt="" />
               </div>
-            </article>
-          </div>
+              <h5>Wesley Smits <span class="in-class">in</span> JavaScript in Plain English</h5>
+              <h4>How To Make Visual Studio Code Look Amazing</h4>
+              <p class="date-readtime">
+                <span>Oct 20</span> <span>&#x2022;</span> <span>7 min read</span>
+              </p>
+            </div>
+          </article>
         </div>
       </section>
       <hr class="grey-row" />

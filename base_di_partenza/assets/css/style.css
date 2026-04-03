@@ -7,11 +7,18 @@ body {
   font-style: normal;
 }
 /* GLOBAL */
-header,
-section,
-.news-footer-aside {
+#main-menu,
+.news-footer-aside,
+.hero-limit,
+.trending-section {
   max-width: 1300px;
   margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 h1 {
@@ -43,7 +50,6 @@ h4 {
 }
 h5 {
   font-size: 1em;
-  line-height: 0;
 }
 
 button {
@@ -73,11 +79,11 @@ ul {
 /* HEADER */
 
 header {
-  padding: 1em 0;
+  padding-top: 1em;
+  background-color: #ffc017;
 }
 
 .header-n-hero-bg-color {
-  background-color: #ffc017;
   margin-bottom: 2em;
   position: relative;
 }
@@ -89,6 +95,7 @@ header {
 #main-menu {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1em;
 }
 
 #main-menu ul {
@@ -99,8 +106,10 @@ header {
 }
 /* HERO SECTION */
 #hero-section {
+  background-color: #ffc017;
   padding: 5em 0;
   width: 100%;
+  position: relative;
 }
 
 #hero-section svg {
@@ -127,17 +136,15 @@ header {
 
 .article-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 3em;
 }
 
-.article-wrapper > div {
-  display: inherit;
-  justify-content: space-between;
-}
-
 .trending-article {
+  width: 300px;
   display: flex;
+  flex-grow: 1;
 }
 
 .number-article {
@@ -239,10 +246,11 @@ footer h2 {
   padding: 0.5em 0.8em;
 }
 
-@media screen and (max-width: 992px) {
-  header,
-  section,
-  .news-footer-aside {
+@media screen and (max-width: 1200px) {
+  #main-menu,
+  .news-footer-aside,
+  .hero-limit,
+  .trending-section {
     margin: 0 3em;
   }
 
@@ -260,11 +268,7 @@ footer h2 {
   }
 
   .article-wrapper {
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .article-wrapper > div {
-    display: inherit;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -299,5 +303,12 @@ footer h2 {
   #main-menu ul li:nth-child(4),
   #svg-inject {
     display: none;
+  }
+
+  .trending-article {
+    width: 100%;
+  }
+  .footer-inside-article {
+    align-items: center;
   }
 }
