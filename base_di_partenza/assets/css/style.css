@@ -1,20 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-/* GLOBAL */
-#main-menu,
-.news-footer-aside,
-.hero-limit,
-.trending-section {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
+/* CAMBIO COLORE NAV BAR */
 .nav-white-background {
   background-color: #fff;
 }
@@ -26,6 +12,29 @@ body {
 }
 .nav-button-green {
   background-color: #0e7f14;
+}
+/* ----------------------------- */
+/* GLOBAL */
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  padding-top: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#main-menu,
+.news-footer-aside,
+.hero-limit,
+.trending-section {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -83,14 +92,7 @@ ul {
   color: #757575;
 }
 
-/* HEADER */
-
-header {
-  padding-top: 1em;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
+/* NAVBAR */
 
 #main-menu ul button {
   padding: 0.8em 1em;
@@ -157,6 +159,7 @@ header {
   font-size: 2em;
   font-weight: 700;
   color: #e6e7e7;
+  padding-top: 0.2em;
 }
 .inside-article-section {
   display: flex;
