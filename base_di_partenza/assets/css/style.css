@@ -70,6 +70,7 @@ header {
 .header-n-hero-bg-color {
   background-color: #ffc017;
   margin-bottom: 2em;
+  position: relative;
 }
 
 #main-menu ul button {
@@ -90,6 +91,14 @@ header {
 /* HERO SECTION */
 #hero-section {
   padding: 5em 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+#hero-section svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 #hero-section p {
@@ -157,6 +166,7 @@ header {
 .footer-inside-article {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3em;
 }
 .footer-inside-article > img {
   height: 150px;
