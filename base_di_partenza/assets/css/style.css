@@ -15,10 +15,17 @@ body {
   margin: 0 auto;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
+.nav-white-background {
+  background-color: #fff;
+}
+.nav-yellow-background {
+  background-color: #ffc017;
+}
+.nav-button-black {
+  background-color: black;
+}
+.nav-button-green {
+  background-color: #0e7f14;
 }
 
 h1 {
@@ -80,7 +87,9 @@ ul {
 
 header {
   padding-top: 1em;
-  background-color: #ffc017;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header-n-hero-bg-color {
