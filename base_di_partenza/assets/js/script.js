@@ -2,16 +2,22 @@ const headerColor = document.querySelector("header")
 const buttonColor = document.getElementById("top-button")
 
 window.addEventListener("scroll", () => {
+  headerColor.style.transition = "background-color 0.5s ease-in-out"
+  buttonColor.style.transition = "background-color 0.5s ease-in-out"
   if (window.scrollY > 410) {
-    headerColor.classList.add("nav-white-background")
-    headerColor.classList.remove("nav-yellow-background")
-    buttonColor.classList.add("nav-button-green")
-    buttonColor.classList.remove("nav-button-black")
+    headerColor.style.backgroundColor = "#fff"
+    buttonColor.style.backgroundColor = "#0e7f14"
+    // headerColor.classList.add("nav-white-background")
+    // headerColor.classList.remove("nav-yellow-background")
+    // buttonColor.classList.add("nav-button-green")
+    // buttonColor.classList.remove("nav-button-black")
   } else {
-    buttonColor.classList.remove("nav-button-green")
-    buttonColor.classList.add("nav-button-black")
-    headerColor.classList.remove("nav-white-background")
-    headerColor.classList.add("nav-yellow-background")
+    headerColor.style.backgroundColor = "#ffc017"
+    buttonColor.style.backgroundColor = "#000"
+    // buttonColor.classList.remove("nav-button-green")
+    // buttonColor.classList.add("nav-button-black")
+    // headerColor.classList.remove("nav-white-background")
+    // headerColor.classList.add("nav-yellow-background")
   }
 })
 

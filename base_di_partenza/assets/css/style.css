@@ -13,8 +13,13 @@
 .nav-button-green {
   background-color: #0e7f14;
 }
-/* ----------------------------- */
+
 /* GLOBAL */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -123,6 +128,7 @@ ul {
   position: absolute;
   right: 0;
   bottom: 0;
+  transition: right ease-in 0.5s;
 }
 
 #hero-section p {
