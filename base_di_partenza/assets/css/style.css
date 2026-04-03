@@ -39,6 +39,7 @@ h4 {
   font-weight: 800;
   margin: 0;
   line-height: 1.2em;
+  word-wrap: break-word;
 }
 h5 {
   font-size: 1em;
@@ -65,6 +66,10 @@ ul {
   border: 1px solid #e6e7e7;
 }
 
+.in-class {
+  color: #757575;
+}
+
 /* HEADER */
 
 header {
@@ -78,7 +83,7 @@ header {
 }
 
 #main-menu ul button {
-  padding: 1em 1em;
+  padding: 0.8em 1em;
 }
 
 #main-menu {
@@ -122,8 +127,13 @@ header {
 
 .article-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 3em;
+}
+
+.article-wrapper > div {
+  display: inherit;
+  justify-content: space-between;
 }
 
 .trending-article {
@@ -139,6 +149,7 @@ header {
 .inside-article-section {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
   gap: 0.5em;
 }
 
@@ -250,6 +261,12 @@ footer h2 {
 
   .article-wrapper {
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .article-wrapper > div {
+    display: inherit;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .date-readtime {
