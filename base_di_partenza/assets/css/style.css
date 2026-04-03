@@ -325,6 +325,11 @@ footer h2 {
   .trending-article {
     width: 100%;
   }
+
+  .inside-article-section {
+    max-width: 100%;
+    flex-grow: 1;
+  }
   .footer-inside-article {
     align-items: center;
   }
