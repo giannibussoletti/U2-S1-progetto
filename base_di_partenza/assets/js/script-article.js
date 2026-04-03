@@ -1,5 +1,181 @@
+const trendingArticle = [
+  {
+    author: "Tom cooper",
+    authorImg: "./assets/imgs/image01.jpeg",
+    title: "Ukraine War, 23 Octorber 2022",
+    date: "Oct 23",
+    readingTime: "5 min read",
+  },
+  {
+    author: `Arthur Hayes <span class="in-class">in</span> Entrepreneur's Handbook`,
+    authorImg: "./assets/imgs/image02.png",
+    title: "Comeback",
+    date: "Oct 26",
+    readingTime: "24 min read",
+  },
+  {
+    author: `Erin A Ross <span class="in-class">in</span> Slackjaw`,
+    authorImg: "./assets/imgs/image03.jpeg",
+    title: "How I Learned to Love My Breasts Even Though One Is A Horcrux For Voldemort",
+    date: "Oct 26",
+    readingTime: "24 min read",
+  },
+  {
+    author: `Frank Mastropolo <span class="in-class">in</span> The Riff`,
+    authorImg: "./assets/imgs/image04.png",
+    title: "The Night Paul McCartney Donned a Disguise at Fillmore East",
+    date: "Oct 22",
+    readingTime: "3 min read",
+  },
+  {
+    author: `Frank Andrade <span class="in-class">in</span> Towards Data Science`,
+    authorImg: "./assets/imgs/image05.jpeg",
+    title: "5 Python Projects to Automate Your Life: From Beginner to Advanced",
+    date: "Oct 26",
+    readingTime: "6 min read",
+  },
+  {
+    author: `Wesley Smits <span class="in-class">in</span> JavaScript in Plain English`,
+    authorImg: "./assets/imgs/image06.png",
+    title: "How To Make Visual Studio Code Look Amazing",
+    date: "Oct 20",
+    readingTime: "7 min read",
+  },
+]
+
+const footerArticle = [
+  {
+    author: `Robert Roy Britt`,
+    authorImg: "./assets/imgs/image07.jpeg",
+    title: "How old is old?",
+    description:
+      "What we consider “old” changes dramatically with age, and our perspectives can be predictive of how well we age",
+    dateAndTime: "Oct 27 &#x2022; 5 min read",
+    tag: "Aging",
+    articleImg: "./assets/imgs/image08.jpeg",
+  },
+  {
+    author: `Taru Anniina Liikanen`,
+    authorImg: "./assets/imgs/image09.jpeg",
+    title: "Is Taylor Swift Allowed to Speak About Fat?",
+    description: "Can you speak about your trauma if you don't look traumatized?",
+    dateAndTime: "Oct 24 &#x2022; 6 min read",
+    tag: "Health",
+    articleImg: "./assets/imgs/image10.jpeg",
+  },
+  {
+    author: `David Rodenas, Ph. D.`,
+    authorImg: "./assets/imgs/image11.jpeg",
+    title: "Don’t Screw Up, You Will Be Found Guilty",
+    description: `Software Engineer, yours is the right to produce high-quality work at all times, also the liability. Oct 15 · 5 min read · Software Engineering `,
+    dateAndTime: "Oct 15 &#x2022; 5 min read",
+    tag: "Software Engineering",
+    articleImg: "./assets/imgs/image12.png",
+  },
+  {
+    author: `Microsoft Design`,
+    authorImg: "./assets/imgs/image13.png",
+    title: "Leave No Trace",
+    description:
+      "What we consider “old” changes dramatically with age, and our perspectives can be predictive of how well we age",
+    dateAndTime: "oct 27 &#x2022; 5 min read",
+    tag: "Sustainability",
+    articleImg: "./assets/imgs/image14.png",
+  },
+  {
+    author: `Scott H. Young`,
+    authorImg: "./assets/imgs/image15.jpeg",
+    title: "Variability, Not Repetition, is the Key to Mastery",
+    description:
+      "Bruce Lee is reported to have said, “I fear not the man who has practiced 10,000 kicks once, but the man who has practiced one kick 10,000... ",
+    dateAndTime: "Oct 26 &#x2022; 7 min read",
+    tag: "Health",
+    articleImg: "./assets/imgs/image16.jpg",
+  },
+  {
+    author: `Paul A. DeStefano <span class="in-class">in</span> Human Parts`,
+    authorImg: "./assets/imgs/image17.png",
+    title: "What I Overheard as an Escape Room Actor",
+    description: "Lock a group of people in a room and you’ll witness some surprising confessions",
+    dateAndTime: "Jan 18,2020 &#x2022; 6 min read",
+    tag: "Experiences ",
+    articleImg: "./assets/imgs/image18.jpeg",
+  },
+  {
+    author: `Kim Scott`,
+    authorImg: "./assets/imgs/image07.jpeg",
+    title: "6 Steps for Setting Measurable Goals to Avoid “Productivity Paranoia”",
+    description:
+      "With more people working in remote and hybrid environments than ever before, company, team and individual goals must be explicit and…",
+    dateAndTime: "Oct 24 &#x2022; 6 min read",
+    tag: "Health",
+    articleImg: "./assets/imgs/image20.jpg",
+  },
+]
+
+const articleWrapper = document.getElementsByClassName("article-wrapper")[0]
+const articleFooter = document.querySelector(".news-footer-aside section")
+
+const articleInjection = () => {
+  // TRENDING ARTICLE
+  for (let i = 0; i < trendingArticle.length; i++) {
+    const author = trendingArticle[i].author
+    const authorImg = trendingArticle[i].authorImg
+    const title = trendingArticle[i].title
+    const date = trendingArticle[i].date
+    const readingTime = trendingArticle[i].readingTime
+
+    articleWrapper.innerHTML += `<article class="trending-article">
+    <div class="number-article">${i + 1}</div>
+<div class="inside-article-section">
+  <div class="author">
+  <img src=${authorImg} alt="">
+  <h5>${author}</h5>
+  </div>
+  <h4>${title}</h4>
+  <p class="date-readtime">
+  <span>${date}</span> <span>•</span> <span>${readingTime}</span>
+  </p>
+  </div>
+  </article>`
+  }
+  // ------------------------ //
+  // FOOTER ARTICLE
+
+  for (let i = 0; i < footerArticle.length; i++) {
+    const author = footerArticle[i].author
+    const authorImg = footerArticle[i].authorImg
+    const title = footerArticle[i].title
+    const description = footerArticle[i].description
+    const dateAndTime = footerArticle[i].dateAndTime
+    const tag = footerArticle[i].tag
+    const articleImg = footerArticle[i].articleImg
+
+    articleFooter.innerHTML += `<article class="footer-inside-article">
+            <div>
+              <div class="author">
+                <img src="${authorImg}" alt="">
+                <h5>${author}</h5>
+              </div>
+              <h3>${title}</h3>
+              <p>${description}</p>
+              <div class="ft-ins-arti-date">
+                <p class="date-readtime">${dateAndTime}</p>
+                <span>•</span>
+                <span>${tag}</span>
+                <span><img src="./assets/imgs/svg/star.svg" alt=""></span>
+                <span><img src="./assets/imgs/svg/bookmark.svg" alt=""></span>
+              </div>
+            </div>
+            <img src="${articleImg}" alt="">
+          </article>`
+  }
+}
+articleInjection()
+
 const headerColor = document.querySelector("header")
 const buttonColor = document.getElementById("top-button")
+
 // ANIMAZIONE, aggiornata con una cambio di colore più graduale
 window.addEventListener("scroll", () => {
   headerColor.style.transition = "background-color 0.5s ease-in-out"
@@ -20,6 +196,7 @@ window.addEventListener("scroll", () => {
     // headerColor.classList.add("nav-yellow-background")
   }
 })
+
 // Injection del codice svg per mandere il file HTML più pulito e leggibile
 const svgInject = () => {
   const heroSpan = document.getElementById("svg-inject")

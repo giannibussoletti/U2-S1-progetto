@@ -310,11 +310,13 @@ footer h2 {
 @media screen and (max-width: 678px) {
   #main-menu ul li:nth-child(2),
   #main-menu ul li:nth-child(3),
-  #main-menu ul li:nth-child(4),
-  #svg-inject {
+  #main-menu ul li:nth-child(4) {
     display: none;
   }
 
+  #hero-section svg {
+    right: -50em;
+  }
   .trending-article {
     width: 100%;
   }
