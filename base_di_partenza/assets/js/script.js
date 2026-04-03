@@ -7288,7 +7288,14 @@ const svgInject = () => {
 svgInject()
 
 const arrayOfM = document.querySelectorAll("path")
-
-setInterval(changingOpacity (){
-  const randomNumber = Math.random() 
-},1000)
+let randomNumber
+setInterval(function () {
+  randomNumber = Math.floor(Math.random() * 274)
+  const opacityFull = arrayOfM[randomNumber].setAttribute("opacity", 1)
+  const opacityEmpty = arrayOfM[randomNumber].setAttribute("opacity", 0)
+  if (arrayOfM[randomNumber].getAttribute("opacity") !== String(0)) {
+    opacityFull
+  } else {
+    opacityEmpty
+  }
+}, 500)
