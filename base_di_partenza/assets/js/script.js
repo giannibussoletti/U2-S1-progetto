@@ -1,49 +1,49 @@
 const svgInject = () => {
   const heroSpan = document.getElementById("svg-inject")
-  const trendingArticle = document.querySelector(".article-wrapper")
-  const footerNews = document.querySelector(".news-footer-aside section")
+  //   const trendingArticle = document.querySelector(".article-wrapper")
+  //   const footerNews = document.querySelector(".news-footer-aside section")
 
-  const trendingHTML = `<article class="trending-article">
-            <div class="number-article">01</div>
-            <div class="inside-article-section">
-              <div class="author">
-                <img src="./assets/imgs/image01.jpeg" alt="" />
-                <h5>Tom cooper</h5>
-              </div>
-              <h4>Ukraine War, 23 Octorber 2022</h4>
-              <p class="date-readtime">oct 23 &#x2022; 5 min read</p>
-            </div>
-          </article>`
+  //   const trendingHTML = `<article class="trending-article">
+  //             <div class="number-article">01</div>
+  //             <div class="inside-article-section">
+  //               <div class="author">
+  //                 <img src="./assets/imgs/image01.jpeg" alt="" />
+  //                 <h5>Tom cooper</h5>
+  //               </div>
+  //               <h4>Ukraine War, 23 Octorber 2022</h4>
+  //               <p class="date-readtime">oct 23 &#x2022; 5 min read</p>
+  //             </div>
+  //           </article>`
 
-  const footerArtHTML = `<article class="footer-inside-article">
-            <div>
-              <div class="author">
-                <img src="" alt="">
-                <h5>Robert Roy Britt</h5>
-              </div>
-              <h3>How old is old?</h3>
-              <p>
-                What we consider “old” changes dramatically with age, and our perspectives can be
-                predictive of how well we age
-              </p>
-              <div class="ft-ins-arti-date">
-                <p class="date-readtime">oct 27 • 5 min read</p>
-                <span>•</span>
-                <span>Aging</span>
-                <span><img src="./assets/imgs/svg/star.svg" alt=""></span>
-                <span><img src="./assets/imgs/svg/bookmark.svg" alt=""></span>
-              </div>
-            </div>
-            <img src="./assets/imgs/image08.jpeg" alt="">
-          </article>`
+  //   const footerArtHTML = `<article class="footer-inside-article">
+  //             <div>
+  //               <div class="author">
+  //                 <img src="" alt="">
+  //                 <h5>Robert Roy Britt</h5>
+  //               </div>
+  //               <h3>How old is old?</h3>
+  //               <p>
+  //                 What we consider “old” changes dramatically with age, and our perspectives can be
+  //                 predictive of how well we age
+  //               </p>
+  //               <div class="ft-ins-arti-date">
+  //                 <p class="date-readtime">oct 27 • 5 min read</p>
+  //                 <span>•</span>
+  //                 <span>Aging</span>
+  //                 <span><img src="./assets/imgs/svg/star.svg" alt=""></span>
+  //                 <span><img src="./assets/imgs/svg/bookmark.svg" alt=""></span>
+  //               </div>
+  //             </div>
+  //             <img src="./assets/imgs/image08.jpeg" alt="">
+  //           </article>`
 
-  for (let i = 0; i < 5; i++) {
-    trendingArticle.innerHTML += trendingHTML
-  }
+  //   for (let i = 0; i < 5; i++) {
+  //     trendingArticle.innerHTML += trendingHTML
+  //   }
 
-  for (let i = 0; i < 6; i++) {
-    footerNews.innerHTML += footerArtHTML
-  }
+  //   for (let i = 0; i < 6; i++) {
+  //     footerNews.innerHTML += footerArtHTML
+  //   }
   heroSpan.innerHTML = `<svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 585 462"
