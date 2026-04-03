@@ -7296,4 +7296,4 @@ setInterval(function () {
   } else {
     arrayOfM[randomNumber].setAttribute("opacity", 1)
   }
-}, 1000)
+}, 400)

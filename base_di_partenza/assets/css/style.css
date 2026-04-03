@@ -92,11 +92,6 @@ header {
   z-index: 10;
 }
 
-.header-n-hero-bg-color {
-  margin-bottom: 2em;
-  position: relative;
-}
-
 #main-menu ul button {
   padding: 0.8em 1em;
 }
@@ -119,6 +114,7 @@ header {
   padding: 5em 0;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 #hero-section svg {
@@ -261,10 +257,6 @@ footer h2 {
   .hero-limit,
   .trending-section {
     margin: 0 3em;
-  }
-
-  .header-n-hero-bg-color {
-    overflow: clip;
   }
 
   #svg-inject {
